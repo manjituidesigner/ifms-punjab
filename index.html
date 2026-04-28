@@ -68,9 +68,9 @@
                         style="font-size: 0.85rem;" title="Increase Font Size">A+</button>
                 </div>
 
-                <button class="btn btn-link text-white p-0 border-0 fs-5 theme-toggle ms-2"
+                <button id="themeToggleBtn" class="btn btn-link text-white p-0 border-0 fs-5 theme-toggle ms-2"
                     title="Toggle Dark/Light Mode">
-                    <i class="bi bi-moon-stars-fill text-shadow"></i>
+                    <i id="themeToggleIcon" class="bi bi-moon-stars-fill text-shadow"></i>
                 </button>
 
                 <!-- Mobile Toggle -->
@@ -683,7 +683,7 @@
 
 
     <!-- Tutorials Top Wave Separator -->
-    <div style="position: relative; width: 100%; overflow: hidden; line-height: 0; transform: translateY(1px); z-index: 1; background: #ffffff;">
+    <div class="tutorials-top-wave-container" style="position: relative; width: 100%; overflow: hidden; line-height: 0; transform: translateY(1px); z-index: 1; background: #ffffff;">
         <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="display: block; width: 100%; height: 60px;">
             <path d="M0,30 C320,90 420,-30 740,30 C1060,90 1120,-30 1440,30 L1440,80 L0,80 Z" fill="#a0a0a0" opacity="0.5"></path>
             <path d="M0,35 C320,95 420,-25 740,35 C1060,95 1120,-25 1440,35 L1440,80 L0,80 Z" fill="#161c2d"></path>
@@ -1043,7 +1043,7 @@
     <div style="position: relative; width: 100%; overflow: hidden; line-height: 0; transform: translateY(1px); z-index: 1; background: #161c2d;">
         <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="display: block; width: 100%; height: 60px;">
             <path d="M0,30 C320,90 420,-30 740,30 C1060,90 1120,-30 1440,30 L1440,80 L0,80 Z" fill="#e0e0e0" opacity="0.5"></path>
-            <path d="M0,35 C320,95 420,-25 740,35 C1060,95 1120,-25 1440,35 L1440,80 L0,80 Z" fill="#f8f9fa"></path>
+            <path class="wave-manuals" d="M0,35 C320,95 420,-25 740,35 C1060,95 1120,-25 1440,35 L1440,80 L0,80 Z" fill="#f8f9fa"></path>
         </svg>
     </div>
 
@@ -1719,6 +1719,41 @@
             });
         });
     </script>
+
+    <!-- Dark Mode Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleBtn = document.getElementById('themeToggleBtn');
+            const themeToggleIcon = document.getElementById('themeToggleIcon');
+            const htmlElement = document.documentElement;
+            
+            // Check for saved user preference
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                htmlElement.setAttribute('data-bs-theme', savedTheme);
+                if (savedTheme === 'dark') {
+                    themeToggleIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+                }
+            }
+            
+            themeToggleBtn.addEventListener('click', () => {
+                const currentTheme = htmlElement.getAttribute('data-bs-theme');
+                let newTheme = 'light';
+                
+                if (currentTheme === 'dark') {
+                    newTheme = 'light';
+                    themeToggleIcon.classList.replace('bi-sun-fill', 'bi-moon-stars-fill');
+                } else {
+                    newTheme = 'dark';
+                    themeToggleIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+                }
+                
+                htmlElement.setAttribute('data-bs-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+            });
+        });
+    </script>
+
 </body>
 
 </html>
