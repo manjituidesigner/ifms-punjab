@@ -1,0 +1,170 @@
+﻿    <!-- ======= User Manuals Section ======= -->
+    <section id="facts" class="user-manuals-section py-5" style="background-color: #f8f9fa;">
+        <div class="container py-lg-5">
+            <div class="row align-items-stretch">
+                <!-- Left Side Fixed Image -->
+                <div class="col-lg-5 mb-5 mb-lg-0 d-flex">
+                    <div class="position-relative w-100 shadow-lg" style="border-radius: 0;">
+                        <img src="images/manuals-bg.jpg" onerror="this.src='https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?auto=format&fit=crop&w=800&q=80'" alt="User Manuals" class="img-fluid w-100 h-100" style="object-fit: cover; min-height: 500px;">
+                    </div>
+                </div>
+
+                <!-- Right Side Scrollable List -->
+                <div class="col-lg-7 ps-lg-5">
+                    <div class="manuals-list pe-3" style="max-height: 500px; overflow-y: auto;">                        <a href="./docs/eTrsy/transfer_employees.docx" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">01</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Steps to transfer employees from other to Regular category</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/FailedTransaction.docx" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">02</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Failed Transaction Manual For Treasuries</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/pranmanual.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">03</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Manual for PRAN Correction</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/register_vendor.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">04</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Steps to Register Stamp Vendor At eTreasury</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eRct/payment_eReceipt_vendors.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">05</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Steps for Payment at eReceipt by Stamp Vendors</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/npsArrear.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">06</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Steps to fill NPS Arrear form.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/EMD_Manual.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">07</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">EMD Bill User Manual.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/RefundManual.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">08</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Refund Bill User Manual.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eRct/IFMS-eReceipt_Manual_SBI_Offline_Challan_Deposit.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">09</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">User Manual for depositing payments via Offline/Online mode at SBI Gateway.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eRct/IFMS-eReceipt_Manual_PNB_Challan_Deposit.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">10</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">User Manual for depositing payments via Offline/Online mode at PNB Gateway.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eRct/IFMS-eReceipt-Manual-Verify-Challan.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">11</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">How to verify Manually Verify Challan on eReceipt portal.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/PDLPLAManual.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">12</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">PDPLA User Manual.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/DirectVoucherPostingUpdation.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">13</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Updation of Direct Voucher Posting - User Manual</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/BTUpdation.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">14</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Updation of BT - User Manual</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/GST_Trans.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">15</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">User Manual for Processing of GST Transactions</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eRct/Assign_Receipt_Targets.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">16</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Assign Or Revoke Receipt Targets - User Manual</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/PRAN_Registration.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">17</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">User Manual For PRAN Registration</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/PRAN_Modification.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">18</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">User Manual for PRAN Modification</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eRct/payments_eReceipt.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">19</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">How to deposit payments via eReceipt Mobile App</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFMS Punjab - Next Gen</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Custom Style -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top transition-all py-3">
+        <div class="container-fluid px-4 px-lg-5 d-flex align-items-center justify-content-between">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
+                <img src="https://ifms.punjab.gov.in/assets/img/pb-govt.png" alt="IFMS Punjab" style="height: 45px;"
+                    class="me-2">
+
+            </a>
+
+            <!-- Center Nav Menu (Pill shape) -->
+            <nav id="navbar" class="navbar-custom d-none d-lg-flex rounded-pill px-4 py-2">
+                <ul class="d-flex list-unstyled mb-0 gap-4 align-items-center m-0">
+                    <li><a class="nav-link active text-dark fw-semibold text-decoration-none" href="#hero">Home</a></li>
+                    <li><a class="nav-link text-dark fw-semibold text-decoration-none" href="#about">About Us</a></li>
+                    <li><a class="nav-link text-dark fw-semibold text-decoration-none" href="#tutorials">IFMS
+                            Youtube</a></li>
+                    <li><a class="nav-link text-dark fw-semibold text-decoration-none" href="#facts">User Manuals</a>
+                    </li>
+                    <li><a class="nav-link text-dark fw-semibold text-decoration-none"
+                            href="#instructions">Instructions</a></li>
+                </ul>
+            </nav>
+
+            <!-- Right Side Actions -->
+            <div class="header-actions d-flex align-items-center gap-3">
+                <a class="text-white text-decoration-none d-flex align-items-center" title="Screen Reader Access">
+                    <span class="d-none d-md-inline fw-medium text-shadow" style="font-size: 0.8rem;">Screen Reader
+                        Access</span>
+                </a>
+
+                <!-- Font Resize Controls -->
+                <div
+                    class="font-resize-controls d-inline-flex border border-secondary border-opacity-50 rounded overflow-hidden shadow-sm">
+                    <button onclick="changeFontSize(-1)"
+                        class="btn btn-sm text-warning fw-bold border-0 border-end border-secondary border-opacity-50 px-2 py-0"
+                        style="font-size: 0.85rem;" title="Decrease Font Size">A-</button>
+                    <button onclick="resetFontSize()"
+                        class="btn btn-sm text-warning fw-bold border-0 border-end border-secondary border-opacity-50 px-2 py-0"
+                        style="font-size: 0.85rem;" title="Reset Font Size">A</button>
+                    <button onclick="changeFontSize(1)" class="btn btn-sm text-warning fw-bold border-0 px-2 py-0"
+                        style="font-size: 0.85rem;" title="Increase Font Size">A+</button>
+                </div>
+
+                <button class="btn btn-link text-white p-0 border-0 fs-5 theme-toggle ms-2"
+                    title="Toggle Dark/Light Mode">
+                    <i class="bi bi-moon-stars-fill text-shadow"></i>
+                </button>
+
+                <!-- Mobile Toggle -->
+                <button class="btn text-white d-lg-none fs-2 p-0 ms-2">
+                    <i class="bi bi-list text-shadow"></i>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel"
+            data-bs-interval="6000" data-bs-pause="false">
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+
+            <!-- Carousel Inner -->
+            <div class="carousel-inner h-100">
+                <!-- Slide 1 -->
+                <div class="carousel-item active h-100">
+                    <div class="hero-bg"
+                        style="background-image: url('https://ifms.punjab.gov.in/assets/img/hero-carousel/1.jpg');">
+                    </div>
+                    <div class="hero-overlay"></div>
+                    <!-- Decorative shapes mimicking Crafto -->
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+
+                    <div class="container-fluid px-4 px-xl-5 h-100 d-flex align-items-center">
+                        <div class="row w-100 justify-content-center">
+                            <div class="col-12 col-xl-11 text-center text-white hero-content">
+                                <div class="badge-custom animate__animated animate__fadeInDown animate__delay-1s">
+                                    <i class="bi bi-award-fill me-2"></i>FinTech Solution
+                                </div>
+                                <h1
+                                    class="hero-heading fw-bolder mb-4 animate__animated animate__fadeInUp animate__delay-1s text-shadow">
+                                    Next Gen Integrated Financial Management System
+                                </h1>
+                                <p class="lead mb-5 animate__animated animate__fadeInUp animate__delay-2s opacity-75">
+                                    Next Gen IFMS is one of the best FinTech solution for a state in India.
+                                </p>
+                                <a href="#"
+                                    class="btn btn-primary-gradient rounded-pill d-inline-flex align-items-center py-2 px-4 fw-semibold animate__animated animate__zoomIn animate__delay-3s shadow-lg">
+                                    <span class="me-3 fs-5">Get started now</span>
+                                    <span
+                                        class="bg-white text-dark rounded-circle d-flex align-items-center justify-content-center arrow-circle">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item h-100">
+                    <div class="hero-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1758873271687-ec6b5bc28fe8?q=80&w=2000&auto=format&fit=crop');">
+                    </div>
+                    <div class="hero-overlay"></div>
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+
+                    <div class="container-fluid px-4 px-xl-5 h-100 d-flex align-items-center">
+                        <div class="row w-100 justify-content-center">
+                            <div class="col-12 col-xl-11 text-center text-white hero-content">
+                                <div class="badge-custom animate__animated animate__fadeInDown animate__delay-1s">
+                                    <i class="bi bi-bar-chart-line-fill me-2"></i>Budgeting
+                                </div>
+                                <h1
+                                    class="hero-heading fw-bolder mb-4 animate__animated animate__fadeInUp animate__delay-1s text-shadow">
+                                    eBudget
+                                </h1>
+                                <p class="lead mb-5 animate__animated animate__fadeInUp animate__delay-2s opacity-75">
+                                    It facilitates planning, allocation, monitoring and analysis of Budget for
+                                    Department of Finance and other Administrative Departments.
+                                </p>
+                                <a href="https://ifms.punjab.gov.in/eBgt/login"
+                                    class="btn btn-primary-gradient rounded-pill d-inline-flex align-items-center py-2 px-4 fw-semibold animate__animated animate__zoomIn animate__delay-3s shadow-lg">
+                                    <span class="me-3 fs-5">Get started now</span>
+                                    <span
+                                        class="bg-white text-dark rounded-circle d-flex align-items-center justify-content-center arrow-circle">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item h-100">
+                    <div class="hero-bg"
+                        style="background-image: url('https://ifms.punjab.gov.in/assets/img/hero-carousel/3.jpg');">
+                    </div>
+                    <div class="hero-overlay"></div>
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+
+                    <div class="container-fluid px-4 px-xl-5 h-100 d-flex align-items-center">
+                        <div class="row w-100 justify-content-center">
+                            <div class="col-12 col-xl-11 text-center text-white hero-content">
+                                <div class="badge-custom animate__animated animate__fadeInDown animate__delay-1s">
+                                    <i class="bi bi-bank2 me-2"></i>Treasury Management
+                                </div>
+                                <h1
+                                    class="hero-heading fw-bolder mb-4 animate__animated animate__fadeInUp animate__delay-1s text-shadow">
+                                    eTreasury
+                                </h1>
+                                <p class="lead mb-5 animate__animated animate__fadeInUp animate__delay-2s opacity-75">
+                                    It facilitates DDOs for creation of Bills and Treasuries for passing of Bills and
+                                    Payments thereafter. It also facilitates management of PLA and EMD accounts.
+                                </p>
+                                <a href="https://ifms1.punjab.gov.in/etreasury"
+                                    class="btn btn-primary-gradient rounded-pill d-inline-flex align-items-center py-2 px-4 fw-semibold animate__animated animate__zoomIn animate__delay-3s shadow-lg">
+                                    <span class="me-3 fs-5">Get started now</span>
+                                    <span
+                                        class="bg-white text-dark rounded-circle d-flex align-items-center justify-content-center arrow-circle">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item h-100">
+                    <div class="hero-bg"
+                        style="background-image: url('https://ifms.punjab.gov.in/assets/img/hero-carousel/4.jpg');">
+                    </div>
+                    <div class="hero-overlay"></div>
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+
+                    <div class="container-fluid px-4 px-xl-5 h-100 d-flex align-items-center">
+                        <div class="row w-100 justify-content-center">
+                            <div class="col-12 col-xl-11 text-center text-white hero-content">
+                                <div class="badge-custom animate__animated animate__fadeInDown animate__delay-1s">
+                                    <i class="bi bi-receipt me-2"></i>Revenue Collection
+                                </div>
+                                <h1
+                                    class="hero-heading fw-bolder mb-4 animate__animated animate__fadeInUp animate__delay-1s text-shadow">
+                                    eReceipt
+                                </h1>
+                                <p class="lead mb-5 animate__animated animate__fadeInUp animate__delay-2s opacity-75">
+                                    It facilitates collection of Tax/Non-Tax revenues in both Online (NetBanking, UPI,
+                                    Cards) as well as Offline mode (Challans).
+                                </p>
+                                <a href="https://ifms.punjab.gov.in/eRct/login"
+                                    class="btn btn-primary-gradient rounded-pill d-inline-flex align-items-center py-2 px-4 fw-semibold animate__animated animate__zoomIn animate__delay-3s shadow-lg">
+                                    <span class="me-3 fs-5">Get started now</span>
+                                    <span
+                                        class="bg-white text-dark rounded-circle d-flex align-items-center justify-content-center arrow-circle">
+                                        <i class="bi bi-arrow-right fs-5"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#heroCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#heroCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="bg-white">
+        <div class="container-fluid px-4 px-xl-5 py-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+                <!-- Service 1 -->
+                <div class="col">
+                    <div class="flip-card-container h-100 animate__animated animate__fadeInUp">
+                        <a href="https://ifms.punjab.gov.in/eBgt/login" class="text-decoration-none h-100 d-block">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-briefcase"></i>
+                                    </div>
+                                    <h4 class="fw-bold">eBudget</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Sunil</span>
+                                            <span class="d-block fw-bold number-text">+91 - 82787 - 73662</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-briefcase"></i>
+                                    </div>
+                                    <h4 class="fw-bold">eBudget</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Sunil</span>
+                                            <span class="d-block fw-bold number-text">+91 - 82787 - 73662</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col">
+                    <div class="flip-card-container h-100 animate__animated animate__fadeInUp animate__delay-1s">
+                        <a href="https://ifms1.punjab.gov.in/etreasury" class="text-decoration-none h-100 d-block">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-bank"></i>
+                                    </div>
+                                    <h4 class="fw-bold">eTreasury</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Charnjeet</span>
+                                            <span class="d-block fw-bold number-text">+91 - 98885 - 32883</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-bank"></i>
+                                    </div>
+                                    <h4 class="fw-bold">eTreasury</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Charnjeet</span>
+                                            <span class="d-block fw-bold number-text">+91 - 98885 - 32883</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col">
+                    <div class="flip-card-container h-100 animate__animated animate__fadeInUp animate__delay-2s">
+                        <a href="https://ifms.punjab.gov.in/eRct/login" class="text-decoration-none h-100 d-block">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-receipt"></i>
+                                    </div>
+                                    <h4 class="fw-bold">eReceipt</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-3">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Sunil</span>
+                                            <span class="d-block fw-bold number-text">+91 - 82787 - 73662</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Surender</span>
+                                            <span class="d-block fw-bold number-text">+91 - 82839 - 36911</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-receipt"></i>
+                                    </div>
+                                    <h4 class="fw-bold">eReceipt</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-3">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Sunil</span>
+                                            <span class="d-block fw-bold number-text">+91 - 82787 - 73662</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Surender</span>
+                                            <span class="d-block fw-bold number-text">+91 - 82839 - 36911</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col">
+                    <div class="flip-card-container h-100 animate__animated animate__fadeInUp animate__delay-3s">
+                        <a href="https://ifms.punjab.gov.in/cpms/login" class="text-decoration-none h-100 d-block">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-card-checklist"></i>
+                                    </div>
+                                    <h4 class="fw-bold">USMS</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-3">
+                                        <i class="bi bi-info-circle me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Unified Sanction Management System</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Mukesh</span>
+                                            <span class="d-block fw-bold number-text">+91 - 98888 - 58474</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-card-checklist"></i>
+                                    </div>
+                                    <h4 class="fw-bold">USMS</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-3">
+                                        <i class="bi bi-info-circle me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Unified Sanction Management System</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Mukesh</span>
+                                            <span class="d-block fw-bold number-text">+91 - 98888 - 58474</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col">
+                    <div class="flip-card-container h-100 animate__animated animate__fadeInUp">
+                        <a href="https://ifms1.punjab.gov.in/etrsy" class="text-decoration-none h-100 d-block">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-card-list"></i>
+                                    </div>
+                                    <h4 class="fw-bold">SNA-SPARSH</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Tarun</span>
+                                            <span class="d-block fw-bold number-text">+91 - 96503 - 13562</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-card-list"></i>
+                                    </div>
+                                    <h4 class="fw-bold">SNA-SPARSH</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Tarun</span>
+                                            <span class="d-block fw-bold number-text">+91 - 96503 - 13562</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col">
+                    <div class="flip-card-container h-100 animate__animated animate__fadeInUp animate__delay-1s">
+                        <a href="https://vms.punjab.gov.in/#/" class="text-decoration-none h-100 d-block">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-truck"></i>
+                                    </div>
+                                    <h4 class="fw-bold">VMS</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-3">
+                                        <i class="bi bi-info-circle me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Vehicle Management System</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Surender</span>
+                                            <span class="d-block fw-bold number-text">+91 - 82839 - 36911</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-truck"></i>
+                                    </div>
+                                    <h4 class="fw-bold">VMS</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-3">
+                                        <i class="bi bi-info-circle me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Vehicle Management System</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Surender</span>
+                                            <span class="d-block fw-bold number-text">+91 - 82839 - 36911</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 7 -->
+                <div class="col">
+                    <div class="flip-card-container h-100 animate__animated animate__fadeInUp animate__delay-2s">
+                        <a href="https://ams.punjab.gov.in/#/" class="text-decoration-none h-100 d-block">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-cash-stack"></i>
+                                    </div>
+                                    <h4 class="fw-bold">AMS</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-3">
+                                        <i class="bi bi-info-circle me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Audit Management System</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Surender</span>
+                                            <span class="d-block fw-bold number-text">+91 - 82839 - 36911</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-cash-stack"></i>
+                                    </div>
+                                    <h4 class="fw-bold">AMS</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-3">
+                                        <i class="bi bi-info-circle me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Audit Management System</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-telephone-fill me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">Surender</span>
+                                            <span class="d-block fw-bold number-text">+91 - 82839 - 36911</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 8 -->
+                <div class="col">
+                    <div class="flip-card-container h-100 animate__animated animate__fadeInUp animate__delay-3s">
+                        <a href="https://ifms.punjab.gov.in/MyOffice/auth/login"
+                            class="text-decoration-none h-100 d-block">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-ticket-detailed"></i>
+                                    </div>
+                                    <h4 class="fw-bold">TMS</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-info-circle me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">If any query related to IFMS modules, kindly
+                                                raise a ticket</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back service-card text-center p-4 rounded-3 h-100">
+                                    <div class="icon-box mb-3">
+                                        <i class="bi bi-ticket-detailed"></i>
+                                    </div>
+                                    <h4 class="fw-bold">TMS</h4>
+                                    <div class="contact-info d-flex align-items-center text-start mb-2">
+                                        <i class="bi bi-info-circle me-3 fs-5"></i>
+                                        <div>
+                                            <span class="d-block name-text">If any query related to IFMS modules, kindly
+                                                raise a ticket</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about-section position-relative pb-5">
+        <!-- Top part with Image and Title -->
+        <div class="container-fluid px-4 px-xl-5 pt-5">
+            <div class="row align-items-center">
+                <!-- Left Image Column -->
+                <div class="col-lg-6 mb-4 mb-lg-0 pe-lg-5">
+                    <div class="about-img-wrapper position-relative overflow-hidden rounded-3 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            alt="Team collaborating" class="img-fluid w-100 object-fit-cover"
+                            style="min-height: 400px; max-height: 600px;">
+                    </div>
+                </div>
+                <!-- Right Text Column -->
+                <div class="col-lg-6 ps-lg-5 mt-4 mt-lg-0 pb-lg-5">
+                    <div class="about-content pe-xl-5">
+                        <div class="d-inline-block px-3 py-1 rounded-1 mb-3 tag-badge fw-semibold text-uppercase"
+                            style="font-size: 0.85rem; letter-spacing: 1px;">
+                            <span class="text-primary me-1">â€¢</span> About Us
+                        </div>
+                        <h2 class="display-6 fw-bold mb-3 about-heading pe-lg-5"
+                            style="letter-spacing: -1px; line-height: 1.2;">
+                            Next Gen IFMS Punjab
+                        </h2>
+                        <p class="text-muted pe-lg-4 mb-4" style="font-size: 0.95rem; line-height: 1.6;">
+                            Next Gen IFMS is a complete suite of applications used by Govt. of Punjab for planning,
+                            budgeting, expenditure control, receipt, bills, payment processing, debt management and,
+                            audit. This state of art portal has brought various stakeholders such as Department of
+                            Finance, Treasuries, Administrative Departments, Accountant General, RBI and Banks on as
+                            single platform with role based Smart Dashboards. These Smart Dashboards have provided a
+                            better Decision Support System to all the stakeholders.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlapping Steps Box -->
+        <div class="container-fluid px-4 px-xl-5 steps-container-wrapper">
+            <div class="steps-box rounded-3 p-4 p-md-5 mx-auto position-relative z-3 shadow-lg">
+                <div class="row g-4 position-relative">
+                    <!-- Dotted Line (Desktop only) -->
+                    <div class="d-none d-lg-block step-connector-line"></div>
+
+                    <!-- Step 1 -->
+                    <div class="col-lg-4 step-item position-relative z-1">
+                        <div class="step-icon-wrapper mb-4">
+                            <span
+                                class="step-icon text-white rounded-circle d-inline-flex align-items-center justify-content-center fs-3 shadow-sm transition-all"
+                                style="background-color: #fcc02a;"><i class="bi bi-lightbulb-fill"></i></span>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5 step-heading">Our Vision</h4>
+                        <p class="text-muted mb-0">To facilitate development and growth for State of Punjab through
+                            progressive financial management.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-lg-4 step-item position-relative z-1">
+                        <div class="step-icon-wrapper mb-4">
+                            <span
+                                class="step-icon text-white rounded-circle d-inline-flex align-items-center justify-content-center fs-3 shadow-sm transition-all"
+                                style="background-color: #fcc02a;"><i class="bi bi-bullseye"></i></span>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5 step-heading">Our Mission</h4>
+                        <p class="text-muted mb-0">To improve State's financial position by improving financial planning
+                            and expenditure control.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-lg-4 step-item position-relative z-1">
+                        <div class="step-icon-wrapper mb-4">
+                            <span
+                                class="step-icon text-white rounded-circle d-inline-flex align-items-center justify-content-center fs-3 shadow-sm transition-all"
+                                style="background-color: #fcc02a;"><i class="bi bi-diagram-3-fill"></i></span>
+                        </div>
+                        <h4 class="fw-bold mb-3 fs-5 step-heading">Our Plan</h4>
+                        <p class="text-muted mb-0">To bring all the stakeholders under one umbrella for better financial
+                            planning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Tutorials Slider Section ======= -->
+    <section id="tutorials" class="tutorials-section py-5">
+        <div class="container-fluid px-4 px-xl-5 pt-4 pb-2">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-8 mb-4 mb-lg-0 text-center text-lg-start">
+                    <h2 class="display-6 fw-bold text-white mb-3" style="letter-spacing: -1px;">
+                        IFMS Youtube
+                    </h2>
+                    <p class="text-white opacity-75 mb-4 pe-lg-5 mx-auto mx-lg-0"
+                        style="max-width: 800px; font-size: 1.05rem;">
+                        IFMS YouTube Channel was created by NIC Punjab for users of IFMS. Duplication of its content in
+                        any form is strictly restricted. Authorisation to reproduce videos must be obtained from the
+                        Department of Finance, Govt. of Punjab.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end mt-4 mt-lg-0">
+                    <!-- Custom Swiper Navigation -->
+                    <div class="swiper-custom-nav d-inline-flex gap-3">
+                        <div
+                            class="swiper-btn-prev d-flex align-items-center justify-content-center rounded-circle transition-all">
+                            <i class="bi bi-chevron-left"></i>
+                        </div>
+                        <div
+                            class="swiper-btn-next d-flex align-items-center justify-content-center rounded-circle transition-all">
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swiper Container -->
+            <div class="swiper tutorialsSwiper pb-2">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="tutorial-card position-relative rounded-4 overflow-hidden shadow-lg h-100"
+                            data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="UVrNDCZt3cg">
+                            <div class="tutorial-img-wrapper h-100 w-100 position-absolute top-0 start-0">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="How to Add Payee"
+                                    class="img-fluid w-100 h-100 object-fit-cover transition-all">
+                            </div>
+                            <div class="tutorial-overlay position-absolute top-0 start-0 w-100 h-100 transition-all">
+                            </div>
+
+                            <div class="position-absolute top-0 start-0 w-100 p-3 z-3">
+                                <span class="text-white fw-bold d-block text-truncate"
+                                    style="text-shadow: 1px 1px 3px rgba(0,0,0,0.9); font-size: 0.95rem;">
+                                    Add Payee #payee #ifms
+                                </span>
+                            </div>
+
+                            <div class="position-absolute top-50 start-50 translate-middle z-3 text-white tutorial-icon transition-all"
+                                style="pointer-events: none;">
+                                <i class="bi bi-play-circle"
+                                    style="font-size: 4rem; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));"></i>
+                            </div>
+
+                            <div class="tutorial-content position-relative z-3 d-flex flex-column h-100 p-4">
+                                <div class="mt-auto d-flex align-items-end justify-content-between">
+                                    <div class="transition-all tutorial-text-group flex-grow-1 w-100">
+                                        <h4 class="text-white fw-bold mb-2 fs-5">How to Add Payee?</h4>
+                                        <p
+                                            class="text-white opacity-75 mb-0 fw-semibold pb-1 d-inline-block tutorial-subtitle">
+                                            WATCH VIDEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="tutorial-card position-relative rounded-4 overflow-hidden shadow-lg h-100"
+                            data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="kOc5aMz7ZFU">
+                            <div class="tutorial-img-wrapper h-100 w-100 position-absolute top-0 start-0">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="How to Fill NPS Paybill"
+                                    class="img-fluid w-100 h-100 object-fit-cover transition-all">
+                            </div>
+                            <div class="tutorial-overlay position-absolute top-0 start-0 w-100 h-100 transition-all">
+                            </div>
+
+                            <div class="position-absolute top-0 start-0 w-100 p-3 z-3">
+                                <span class="text-white fw-bold d-block text-truncate"
+                                    style="text-shadow: 1px 1px 3px rgba(0,0,0,0.9); font-size: 0.95rem;">
+                                    NPS Paybill #nps #paybill
+                                </span>
+                            </div>
+
+                            <div class="position-absolute top-50 start-50 translate-middle z-3 text-white tutorial-icon transition-all"
+                                style="pointer-events: none;">
+                                <i class="bi bi-play-circle"
+                                    style="font-size: 4rem; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));"></i>
+                            </div>
+
+                            <div class="tutorial-content position-relative z-3 d-flex flex-column h-100 p-4">
+                                <div class="mt-auto d-flex align-items-end justify-content-between">
+                                    <div class="transition-all tutorial-text-group flex-grow-1 w-100">
+                                        <h4 class="text-white fw-bold mb-2 fs-5">How to Fill NPS Paybill?</h4>
+                                        <p
+                                            class="text-white opacity-75 mb-0 fw-semibold pb-1 d-inline-block tutorial-subtitle">
+                                            WATCH VIDEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="tutorial-card position-relative rounded-4 overflow-hidden shadow-lg h-100"
+                            data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="OSP30h5fAeU">
+                            <div class="tutorial-img-wrapper h-100 w-100 position-absolute top-0 start-0">
+                                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="How to fill Salary Paybill"
+                                    class="img-fluid w-100 h-100 object-fit-cover transition-all">
+                            </div>
+                            <div class="tutorial-overlay position-absolute top-0 start-0 w-100 h-100 transition-all">
+                            </div>
+
+                            <div class="position-absolute top-0 start-0 w-100 p-3 z-3">
+                                <span class="text-white fw-bold d-block text-truncate"
+                                    style="text-shadow: 1px 1px 3px rgba(0,0,0,0.9); font-size: 0.95rem;">
+                                    Salary Paybill #salary #bill
+                                </span>
+                            </div>
+
+                            <div class="position-absolute top-50 start-50 translate-middle z-3 text-white tutorial-icon transition-all"
+                                style="pointer-events: none;">
+                                <i class="bi bi-play-circle"
+                                    style="font-size: 4rem; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));"></i>
+                            </div>
+
+                            <div class="tutorial-content position-relative z-3 d-flex flex-column h-100 p-4">
+                                <div class="mt-auto d-flex align-items-end justify-content-between">
+                                    <div class="transition-all tutorial-text-group flex-grow-1 w-100">
+                                        <h4 class="text-white fw-bold mb-2 fs-5">How to fill Salary Paybill?</h4>
+                                        <p
+                                            class="text-white opacity-75 mb-0 fw-semibold pb-1 d-inline-block tutorial-subtitle">
+                                            WATCH VIDEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="tutorial-card position-relative rounded-4 overflow-hidden shadow-lg h-100"
+                            data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="GB-u2LsZ2Ic">
+                            <div class="tutorial-img-wrapper h-100 w-100 position-absolute top-0 start-0">
+                                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="DDO Level Process"
+                                    class="img-fluid w-100 h-100 object-fit-cover transition-all">
+                            </div>
+                            <div class="tutorial-overlay position-absolute top-0 start-0 w-100 h-100 transition-all">
+                            </div>
+
+                            <div class="position-absolute top-0 start-0 w-100 p-3 z-3">
+                                <span class="text-white fw-bold d-block text-truncate"
+                                    style="text-shadow: 1px 1px 3px rgba(0,0,0,0.9); font-size: 0.95rem;">
+                                    DDO Process #ddo #ifms
+                                </span>
+                            </div>
+
+                            <div class="position-absolute top-50 start-50 translate-middle z-3 text-white tutorial-icon transition-all"
+                                style="pointer-events: none;">
+                                <i class="bi bi-play-circle"
+                                    style="font-size: 4rem; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));"></i>
+                            </div>
+
+                            <div class="tutorial-content position-relative z-3 d-flex flex-column h-100 p-4">
+                                <div class="mt-auto d-flex align-items-end justify-content-between">
+                                    <div class="transition-all tutorial-text-group flex-grow-1 w-100">
+                                        <h4 class="text-white fw-bold mb-2 fs-5">Process Application at DDO Level</h4>
+                                        <p
+                                            class="text-white opacity-75 mb-0 fw-semibold pb-1 d-inline-block tutorial-subtitle">
+                                            WATCH VIDEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="tutorial-card position-relative rounded-4 overflow-hidden shadow-lg h-100"
+                            data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="-Dubswm-fB8">
+                            <div class="tutorial-img-wrapper h-100 w-100 position-absolute top-0 start-0">
+                                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="IFMS eReceipt Module"
+                                    class="img-fluid w-100 h-100 object-fit-cover transition-all">
+                            </div>
+                            <div class="tutorial-overlay position-absolute top-0 start-0 w-100 h-100 transition-all">
+                            </div>
+
+                            <div class="position-absolute top-0 start-0 w-100 p-3 z-3">
+                                <span class="text-white fw-bold d-block text-truncate"
+                                    style="text-shadow: 1px 1px 3px rgba(0,0,0,0.9); font-size: 0.95rem;">
+                                    eReceipt Module #ereceipt
+                                </span>
+                            </div>
+
+                            <div class="position-absolute top-50 start-50 translate-middle z-3 text-white tutorial-icon transition-all"
+                                style="pointer-events: none;">
+                                <i class="bi bi-play-circle"
+                                    style="font-size: 4rem; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));"></i>
+                            </div>
+
+                            <div class="tutorial-content position-relative z-3 d-flex flex-column h-100 p-4">
+                                <div class="mt-auto d-flex align-items-end justify-content-between">
+                                    <div class="transition-all tutorial-text-group flex-grow-1 w-100">
+                                        <h4 class="text-white fw-bold mb-2 fs-5">IFMS eReceipt Module</h4>
+                                        <p
+                                            class="text-white opacity-75 mb-0 fw-semibold pb-1 d-inline-block tutorial-subtitle">
+                                            WATCH VIDEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide">
+                        <div class="tutorial-card position-relative rounded-4 overflow-hidden shadow-lg h-100"
+                            data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="5JVFjR18loE">
+                            <div class="tutorial-img-wrapper h-100 w-100 position-absolute top-0 start-0">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="Employee Transfer"
+                                    class="img-fluid w-100 h-100 object-fit-cover transition-all">
+                            </div>
+                            <div class="tutorial-overlay position-absolute top-0 start-0 w-100 h-100 transition-all">
+                            </div>
+
+                            <div class="position-absolute top-0 start-0 w-100 p-3 z-3">
+                                <span class="text-white fw-bold d-block text-truncate"
+                                    style="text-shadow: 1px 1px 3px rgba(0,0,0,0.9); font-size: 0.95rem;">
+                                    Employee Transfer #transfer
+                                </span>
+                            </div>
+
+                            <div class="position-absolute top-50 start-50 translate-middle z-3 text-white tutorial-icon transition-all"
+                                style="pointer-events: none;">
+                                <i class="bi bi-play-circle"
+                                    style="font-size: 4rem; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));"></i>
+                            </div>
+
+                            <div class="tutorial-content position-relative z-3 d-flex flex-column h-100 p-4">
+                                <div class="mt-auto d-flex align-items-end justify-content-between">
+                                    <div class="transition-all tutorial-text-group flex-grow-1 w-100">
+                                        <h4 class="text-white fw-bold mb-2 fs-5">Employee Transfer</h4>
+                                        <p
+                                            class="text-white opacity-75 mb-0 fw-semibold pb-1 d-inline-block tutorial-subtitle">
+                                            WATCH VIDEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 7 -->
+                    <div class="swiper-slide">
+                        <div class="tutorial-card position-relative rounded-4 overflow-hidden shadow-lg h-100"
+                            data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="a8XaSTes08k">
+                            <div class="tutorial-img-wrapper h-100 w-100 position-absolute top-0 start-0">
+                                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="Add Employee as Payee"
+                                    class="img-fluid w-100 h-100 object-fit-cover transition-all">
+                            </div>
+                            <div class="tutorial-overlay position-absolute top-0 start-0 w-100 h-100 transition-all">
+                            </div>
+
+                            <div class="position-absolute top-0 start-0 w-100 p-3 z-3">
+                                <span class="text-white fw-bold d-block text-truncate"
+                                    style="text-shadow: 1px 1px 3px rgba(0,0,0,0.9); font-size: 0.95rem;">
+                                    Add Employee #payee
+                                </span>
+                            </div>
+
+                            <div class="position-absolute top-50 start-50 translate-middle z-3 text-white tutorial-icon transition-all"
+                                style="pointer-events: none;">
+                                <i class="bi bi-play-circle"
+                                    style="font-size: 4rem; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));"></i>
+                            </div>
+
+                            <div class="tutorial-content position-relative z-3 d-flex flex-column h-100 p-4">
+                                <div class="mt-auto d-flex align-items-end justify-content-between">
+                                    <div class="transition-all tutorial-text-group flex-grow-1 w-100">
+                                        <h4 class="text-white fw-bold mb-2 fs-5">Add Employee as Payee</h4>
+                                        <p
+                                            class="text-white opacity-75 mb-0 fw-semibold pb-1 d-inline-block tutorial-subtitle">
+                                            WATCH VIDEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 8 -->
+                    <div class="swiper-slide">
+                        <div class="tutorial-card position-relative rounded-4 overflow-hidden shadow-lg h-100"
+                            data-bs-toggle="modal" data-bs-target="#videoModal" data-video-id="UwdcBXqDp7o">
+                            <div class="tutorial-img-wrapper h-100 w-100 position-absolute top-0 start-0">
+                                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="NPS Arrear Bill" class="img-fluid w-100 h-100 object-fit-cover transition-all">
+                            </div>
+                            <div class="tutorial-overlay position-absolute top-0 start-0 w-100 h-100 transition-all">
+                            </div>
+
+                            <div class="position-absolute top-0 start-0 w-100 p-3 z-3">
+                                <span class="text-white fw-bold d-block text-truncate"
+                                    style="text-shadow: 1px 1px 3px rgba(0,0,0,0.9); font-size: 0.95rem;">
+                                    NPS Arrear Bill #nps #npsArrearBill #npsBill
+                                </span>
+                            </div>
+
+                            <div class="position-absolute top-50 start-50 translate-middle z-3 text-white tutorial-icon transition-all"
+                                style="pointer-events: none;">
+                                <i class="bi bi-play-circle"
+                                    style="font-size: 4rem; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));"></i>
+                            </div>
+
+                            <div class="tutorial-content position-relative z-3 d-flex flex-column h-100 p-4">
+                                <div class="mt-auto d-flex align-items-end justify-content-between">
+                                    <div class="transition-all tutorial-text-group flex-grow-1 w-100">
+                                        <h4 class="text-white fw-bold mb-2 fs-5">How to fill NPS Arrear Bill?</h4>
+                                        <p
+                                            class="text-white opacity-75 mb-0 fw-semibold pb-1 d-inline-block tutorial-subtitle">
+                                            WATCH VIDEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Centered Button Below Slider -->
+            <div class="text-center mt-5">
+                <a href="https://www.youtube.com/channel/UCeFY42HoDS_wBm_Pt3kB_Dw" target="_blank"
+                    class="btn btn-primary-gradient rounded-pill d-inline-flex align-items-center py-3 px-5 fw-bold shadow-lg fs-6"
+                    style="letter-spacing: 1px;">
+                    GO TO CHANNEL <i class="bi bi-play-circle-fill ms-2 fs-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+        <!-- ======= User Manuals Section ======= -->
+    <section id="facts" class="user-manuals-section py-5" style="background-color: #f8f9fa;">
+        <div class="container py-lg-5">
+            <div class="row align-items-stretch">
+                <!-- Left Side Fixed Image -->
+                <div class="col-lg-5 mb-5 mb-lg-0 d-flex">
+                    <div class="position-relative w-100 shadow-lg" style="border-radius: 0;">
+                        <img src="images/manuals-bg.jpg" onerror="this.src='https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?auto=format&fit=crop&w=800&q=80'" alt="User Manuals" class="img-fluid w-100 h-100" style="object-fit: cover; min-height: 500px;">
+                    </div>
+                </div>
+
+                <!-- Right Side Scrollable List -->
+                <div class="col-lg-7 ps-lg-5">
+                    <div class="mb-4">
+                        <h2 class="display-6 fw-bold mb-2" style="color: #172b6b;">User Manuals</h2>
+                        <p class="text-muted mb-0">Browse and download official guides and documentation.</p>
+                    </div>
+                    <div class="manuals-list pe-3" style="max-height: 500px; overflow-y: auto;">                        <a href="./docs/eTrsy/transfer_employees.docx" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">01</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Steps to transfer employees from other to Regular category</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/FailedTransaction.docx" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">02</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Failed Transaction Manual For Treasuries</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/pranmanual.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">03</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Manual for PRAN Correction</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/register_vendor.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">04</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Steps to Register Stamp Vendor At eTreasury</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eRct/payment_eReceipt_vendors.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">05</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Steps for Payment at eReceipt by Stamp Vendors</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/npsArrear.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">06</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Steps to fill NPS Arrear form.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/EMD_Manual.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">07</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">EMD Bill User Manual.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/RefundManual.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">08</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Refund Bill User Manual.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eRct/IFMS-eReceipt_Manual_SBI_Offline_Challan_Deposit.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">09</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">User Manual for depositing payments via Offline/Online mode at SBI Gateway.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eRct/IFMS-eReceipt_Manual_PNB_Challan_Deposit.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">10</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">User Manual for depositing payments via Offline/Online mode at PNB Gateway.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eRct/IFMS-eReceipt-Manual-Verify-Challan.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">11</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">How to verify Manually Verify Challan on eReceipt portal.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/PDLPLAManual.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">12</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">PDPLA User Manual.</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/DirectVoucherPostingUpdation.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">13</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Updation of Direct Voucher Posting - User Manual</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/BTUpdation.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">14</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Updation of BT - User Manual</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/GST_Trans.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">15</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">User Manual for Processing of GST Transactions</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eRct/Assign_Receipt_Targets.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">16</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">Assign Or Revoke Receipt Targets - User Manual</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/PRAN_Registration.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">17</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">User Manual For PRAN Registration</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eTrsy/PRAN_Modification.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">18</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">User Manual for PRAN Modification</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                        <a href="./docs/eRct/payments_eReceipt.pdf" download class="manual-item d-flex align-items-center text-decoration-none py-4 border-bottom text-dark transition-all">
+                            <div class="manual-number fw-semibold text-muted me-4" style="font-size: 1.1rem; width: 30px;">19</div>
+                            <div class="manual-content flex-grow-1 pe-3">
+                                <h5 class="mb-1 fw-semibold" style="font-size: 1.1rem;">How to deposit payments via eReceipt Mobile App</h5>
+                            </div>
+                            <div class="manual-icon text-muted">
+                                <i class="bi bi-caret-right-fill fs-5"></i>
+                            </div>
+                        </a>                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Wave Separator -->
+    <div
+        style="position: relative; width: 100%; overflow: hidden; line-height: 0; transform: translateY(1px); z-index: 1; background: var(--background-color);">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="display: block; width: 100%; height: 60px;">
+            <!-- Grey accent wave -->
+            <path d="M0,30 C320,90 420,-30 740,30 C1060,90 1120,-30 1440,30 L1440,80 L0,80 Z" fill="#a0a0a0"></path>
+            <!-- Main blue wave -->
+            <path d="M0,35 C320,95 420,-25 740,35 C1060,95 1120,-25 1440,35 L1440,80 L0,80 Z" fill="#172b6b"></path>
+        </svg>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-section pt-5 pb-4">
+        <div class="container">
+            <!-- Newsletter Top Section -->
+            <div class="row justify-content-center mb-5 pb-5 border-bottom border-secondary border-opacity-50">
+                <div class="col-lg-8 text-center mt-4">
+                    <h2 class="text-white fw-bold mb-3">Subscribe to Our Newsletter</h2>
+                    <p class="text-white opacity-75 mb-4 fs-5" style="max-width: 500px; margin: 0 auto;">Want to keep up
+                        to date with all our latest news and information?</p>
+                    <form class="newsletter-form position-relative mx-auto mt-4" style="max-width: 650px;">
+                        <input type="email" class="form-control rounded-pill border-0 text-white ps-4 pe-5"
+                            style="background-color: rgba(255,255,255,0.1); padding-top: 18px; padding-bottom: 18px;"
+                            placeholder="Enter your email to be added to our mailing list" required>
+                        <button type="submit"
+                            class="btn btn-warning rounded-pill position-absolute top-0 end-0 bottom-0 m-2 px-5 fw-bold shadow-sm"
+                            style="font-size: 1.05rem;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Links Section -->
+            <div class="row gy-4 pb-4">
+                <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center justify-content-lg-start"
+                    style="max-width: 20%;">
+                    <!-- Punjab Map Graphic Placeholder -->
+                    <div class="footer-graphic">
+                        <img src="images/footer-graphic.png"
+                            onerror="this.src='https://ifms.punjab.gov.in/assets/img/pblogo.png'"
+                            alt="IFMS Punjab Graphic" class="img-fluid" style="max-height: 200px;">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 px-lg-4">
+                    <h5 class="text-white fw-bold mb-4 position-relative footer-heading pb-2">Site Map</h5>
+                    <ul class="list-unstyled footer-links mt-4">
+                        <li class="mb-3"><a href="#hero"
+                                class="text-decoration-none text-white opacity-75 d-inline-block fw-semibold"><span
+                                    class="fw-bold me-2">></span> Home</a></li>
+                        <li class="mb-3"><a href="#about"
+                                class="text-decoration-none text-white opacity-75 d-inline-block fw-semibold"><span
+                                    class="fw-bold me-2">></span> About Us</a></li>
+                        <li class="mb-3"><a href="#tutorials"
+                                class="text-decoration-none text-white fw-bold d-inline-block"><span
+                                    class="fw-bold me-2">></span> IFMS Youtube</a></li>
+                        <li class="mb-3"><a href="#facts"
+                                class="text-decoration-none text-white opacity-75 d-inline-block fw-semibold"><span
+                                    class="fw-bold me-2">></span> User Manuals</a></li>
+                        <li class="mb-3"><a href="#instructions"
+                                class="text-decoration-none text-white opacity-75 d-inline-block fw-semibold"><span
+                                    class="fw-bold me-2">></span> Instructions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 px-lg-4">
+                    <h5 class="text-white fw-bold mb-4 position-relative footer-heading pb-2">Contact Us</h5>
+                    <ul class="list-unstyled text-white opacity-75 mt-4">
+                        <li class="mb-4 d-flex align-items-start fw-semibold">
+                            <i class="bi bi-geo-alt me-3 mt-1 fs-5"></i>
+                            <span style="line-height: 1.6;">IFMS PUNJAB - Vit Te Tojna Bhawan,<br>Plot No 2-B, Sector 33
+                                A ,<br>Chandigarh</span>
+                        </li>
+                        <li class="mb-4 d-flex align-items-center fw-semibold">
+                            <i class="bi bi-telephone me-3 fs-5"></i>
+                            <span>Phone: 0172-XXXXXXX</span>
+                        </li>
+                        <li class="mb-4 d-flex align-items-center fw-semibold">
+                            <i class="bi bi-envelope me-3 fs-5"></i>
+                            <span>Email: ebudget.ifms@punjab.gov.in</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 px-lg-4" style="margin-left: 5%;">
+                    <h5 class="text-white fw-bold mb-4 position-relative footer-heading pb-2">Follow Us</h5>
+                    <ul class="list-unstyled footer-socials mt-4">
+                        <li class="mb-4"><a href="#"
+                                class="text-decoration-none text-white opacity-75 d-flex align-items-center fw-semibold"><i
+                                    class="bi bi-facebook me-3 fs-5"></i> Facebook</a></li>
+                        <li class="mb-4"><a href="#"
+                                class="text-decoration-none text-white opacity-75 d-flex align-items-center fw-semibold"><i
+                                    class="bi bi-twitter me-3 fs-5"></i> Twitter</a></li>
+                        <li class="mb-4"><a href="#"
+                                class="text-decoration-none text-white opacity-75 d-flex align-items-center fw-semibold"><i
+                                    class="bi bi-instagram me-3 fs-5"></i> Instagram</a></li>
+                        <li class="mb-4"><a href="#"
+                                class="text-decoration-none text-white opacity-75 d-flex align-items-center fw-semibold"><i
+                                    class="bi bi-linkedin me-3 fs-5"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Strip -->
+        <div class="container-fluid py-3 mt-4" style="background-color: #ffc107;">
+            <div class="container position-relative text-center">
+                <p class="mb-1 text-black" style="font-size: 13px; color: #000 !important;">&copy; Copyright <strong
+                        class="text-black" style="color: #000 !important;">IFMS-2026</strong>. All Rights Reserved</p>
+                <p class="mb-0 text-black fw-bold" style="font-size: 13px; color: #000 !important;">Designed and
+                    Developed by NIC PUNJAB</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#"
+        class="back-to-top d-flex align-items-center justify-content-center shadow-lg transition-all text-decoration-none">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark border-0 shadow-lg">
+                <div class="modal-header border-bottom border-secondary p-3">
+                    <h5 class="modal-title text-white fw-bold d-flex align-items-center gap-2" id="videoModalLabel">
+                        <i class="bi bi-youtube text-danger fs-4"></i> IFMS Video Tutorial
+                    </h5>
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="#" id="modalDirectYoutubeBtn" target="_blank"
+                            class="btn btn-sm btn-outline-light d-none d-sm-block">
+                            Watch on YouTube <i class="bi bi-box-arrow-up-right ms-1"></i>
+                        </a>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="youtubeIframe" src="" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-secondary p-2 d-sm-none">
+                    <a href="#" id="modalDirectYoutubeBtnMobile" target="_blank" class="btn btn-outline-light w-100">
+                        Watch on YouTube <i class="bi bi-box-arrow-up-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS to re-trigger animations on slide change -->
+    <script>
+        const myCarousel = document.getElementById('heroCarousel');
+
+        myCarousel.addEventListener('slide.bs.carousel', function (e) {
+            // Find all animated elements in the next slide
+            const animatedElements = e.relatedTarget.querySelectorAll('.animate__animated');
+
+            // Remove and re-add the classes to restart animation
+            animatedElements.forEach(el => {
+                // Get the specific animation class (e.g., animate__fadeInUp)
+                const classes = Array.from(el.classList);
+                const animClass = classes.find(c => c.startsWith('animate__') && c !== 'animate__animated' && !c.startsWith('animate__delay'));
+
+                if (animClass) {
+                    el.classList.remove(animClass);
+                    // Force reflow
+                    void el.offsetWidth;
+                    el.classList.add(animClass);
+                }
+            });
+        });
+    </script>
+    <!-- Header Scroll Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.getElementById('header');
+
+            // Initial check in case page is loaded not at top
+            if (window.scrollY > 50) {
+                header.classList.add('header-scrolled');
+            }
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            });
+        });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper(".tutorialsSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                grabCursor: true,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".swiper-btn-next",
+                    prevEl: ".swiper-btn-prev",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                    },
+                },
+            });
+
+            // Video Modal Logic
+            const videoModal = document.getElementById('videoModal');
+            const youtubeIframe = document.getElementById('youtubeIframe');
+            const directYoutubeBtn = document.getElementById('modalDirectYoutubeBtn');
+            const directYoutubeBtnMobile = document.getElementById('modalDirectYoutubeBtnMobile');
+
+            videoModal.addEventListener('show.bs.modal', function (event) {
+                // Button that triggered the modal
+                const button = event.relatedTarget;
+                // Extract info from data-bs-* attributes
+                const videoId = button.getAttribute('data-video-id');
+
+                // Update the modal's content.
+                const videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&allowfullscreen=1`;
+                const directUrl = `https://www.youtube.com/watch?v=${videoId}`;
+
+                youtubeIframe.src = videoUrl;
+                directYoutubeBtn.href = directUrl;
+                directYoutubeBtnMobile.href = directUrl;
+            });
+
+            videoModal.addEventListener('hidden.bs.modal', function () {
+                // Clear the src to stop the video from playing in the background
+                youtubeIframe.src = '';
+            });
+        });
+    </script>
+
+    <!-- Font Resize Logic -->
+    <script>
+        let currentZoom = 100;
+        function changeFontSize(step) {
+            currentZoom += (step * 10);
+            if (currentZoom < 80) currentZoom = 80;
+            if (currentZoom > 120) currentZoom = 120;
+            document.body.style.zoom = currentZoom + "%";
+        }
+        function resetFontSize() {
+            currentZoom = 100;
+            document.body.style.zoom = "100%";
+        }
+    </script>
+</body>
+
+</html>
