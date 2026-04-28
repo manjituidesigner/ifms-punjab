@@ -29,7 +29,7 @@ body {
     z-index: 99999;
     width: 45px;
     height: 45px;
-    background-color: #172b6b;
+    background-color: #0e58c2;
     /* Blue background */
     color: #ffc107 !important;
     /* Yellow icon */
@@ -360,7 +360,7 @@ i.bi.bi-arrow-right.fs-5 {
 }
 
 .flip-card-container:hover .flip-card-back {
-    opacity: 1;
+    /* opacity: 1; disabled to keep front styling */
 }
 
 .service-card {
@@ -403,17 +403,27 @@ i.bi.bi-arrow-right.fs-5 {
 }
 
 .flip-card-front .contact-info i {
-    color: #222;
+    color: #111827 !important;
+    background-color: #f3f4f6;
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 1.1rem !important;
 }
 
 .flip-card-front .contact-info .name-text {
-    color: #666;
-    font-size: 0.9rem;
+    color: #111827;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
 .flip-card-front .contact-info .number-text {
-    color: #222;
-    font-size: 1rem;
+    color: #111827;
+    font-size: 0.95rem;
+    font-weight: 800;
 }
 
 /* Back Face Styles (Hover State effectively) */
@@ -493,7 +503,7 @@ i.bi.bi-arrow-right.fs-5 {
 }
 
 .about-heading {
-    color: #0f172a !important;
+    color: #244396 !important;
 }
 
 /* Steps Box */
@@ -509,7 +519,7 @@ i.bi.bi-arrow-right.fs-5 {
 }
 
 .steps-box {
-    background-color: #f3f6f9;
+    background-color: transparent;
 }
 
 .step-icon-wrapper {
@@ -518,7 +528,8 @@ i.bi.bi-arrow-right.fs-5 {
     display: inline-block;
     background: #f3f6f9;
     /* Match steps-box bg to mask the line behind it */
-    padding-right: 15px;
+    border-radius: 50px;
+    padding: 5px;
     /* space between circle and line */
 }
 
@@ -547,6 +558,8 @@ i.bi.bi-arrow-right.fs-5 {
     /* Match reference exact dark blue */
     position: relative;
     overflow: hidden;
+    position: relative;
+    top: 1px;
 }
 
 /* Halftone dotted circle pattern behind header text */
@@ -765,4 +778,13 @@ i.bi.bi-arrow-right.fs-5 {
 
 h5.mb-1.fw-semibold {
     color: #0f172a;
+}
+
+/* Scroll Animation Visibility */
+.animate-on-scroll {
+    visibility: hidden;
+}
+
+.animate-on-scroll.animate__animated {
+    visibility: visible;
 }
