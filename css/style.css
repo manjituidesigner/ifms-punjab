@@ -848,6 +848,18 @@ h5.mb-1.fw-semibold {
     border-color: #333 !important;
 }
 
+[data-bs-theme="dark"] .flip-card-front.service-card:hover {
+    box-shadow: 0px 1px 7px 7px #000000;
+}
+
+[data-bs-theme="dark"] .manual-item:hover {
+    background-color: #15161a;
+}
+
+[data-bs-theme="dark"] i.bi.bi-download.fs-5 {
+    color: white !important;
+}
+
 [data-bs-theme="dark"] .flip-card-front h4,
 [data-bs-theme="dark"] .flip-card-front .contact-info .name-text,
 [data-bs-theme="dark"] .flip-card-front .contact-info .number-text {
@@ -864,7 +876,7 @@ h5.mb-1.fw-semibold {
 }
 
 [data-bs-theme="dark"] .flip-card-front .contact-info {
-    background-color: #1e1e1e !important;
+    /* background-color: #1e1e1e !important; */
 }
 
 /* Hover fixes for cards in dark mode */
@@ -971,11 +983,21 @@ h5.mb-1.fw-semibold {
     background-color: #070708 !important;
 }
 
-/* Make sure the wave above the footer transitions smoothly into the new black footer */
-[data-bs-theme="dark"] svg path[fill="#161c2d"] {
-    fill: #070708 !important;
+/* Tutorials Section matches Dark Theme */
+[data-bs-theme="dark"] .tutorials-section,
+[data-bs-theme="dark"] .tutorials-bottom-wave-container {
+    background-color: #15161a !important;
 }
 
+/* Tutorials Top Wave matches Tutorials Section */
+[data-bs-theme="dark"] svg path[fill="#161c2d"] {
+    fill: #15161a !important;
+}
+
+/* Make sure the wave above the footer transitions smoothly into the new black footer */
+[data-bs-theme="dark"] svg path[fill="#172b6b"] {
+    fill: #070708 !important;
+}
 /* ------------------------------------------- */
 
 /* Mobile View Adjustments */
