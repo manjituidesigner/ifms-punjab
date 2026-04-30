@@ -371,12 +371,26 @@ i.bi.bi-arrow-right.fs-5 {
 
 
 .service-card {
-    border: 1px solid #e5e5e5;
+    border: none !important;
     border-radius: 8px !important;
     padding: 2.5rem 1.5rem !important;
-    background: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    background: #07065c;
+    /* background: linear-gradient(0deg, rgba(7, 6, 92, 1) 0%, rgba(40, 54, 158, 1) 35%, rgba(117, 232, 255, 1) 100%); */
+    background: linear-gradient(210deg, rgb(43 55 118) 0%, rgba(40, 54, 158, 1) 35%, rgb(47 148 158) 100%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     animation: floatCard 4s ease-in-out infinite;
+    transition: all 0.3s ease;
+}
+
+.flip-card-container:hover .service-card {
+    transform: scale(1.04);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    border: none !important;
+}
+
+.flip-card-container:hover .flip-card-front h4,
+.flip-card-container:hover .flip-card-front .icon-box i {
+    color: var(--theme-yellow) !important;
 }
 
 /* Ensure animation only applies to a container that doesn't use transform for hover */
@@ -395,28 +409,26 @@ i.bi.bi-arrow-right.fs-5 {
 .flip-card-front .icon-box i {
     font-size: 3.5rem;
     line-height: 1;
-    background: linear-gradient(135deg, var(--regal-blue) 0%, #00d2ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--theme-yellow);
     display: inline-block;
     margin-bottom: 15px;
 }
 
 .flip-card-front h4 {
-    color: #222;
+    color: var(--theme-yellow);
     font-size: 1.25rem;
     font-weight: 700 !important;
     margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .flip-card-front .contact-info i {
-    color: #111827 !important;
-    background-color: #f3f4f6;
+    color: #ffffff !important;
+    background-color: rgb(4 1 28 / 19%);
     width: 38px;
     height: 38px;
+    min-width: 38px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -425,13 +437,13 @@ i.bi.bi-arrow-right.fs-5 {
 }
 
 .flip-card-front .contact-info .name-text {
-    color: #111827;
+    color: #ffffff;
     font-size: 0.95rem;
     font-weight: 700;
 }
 
 .flip-card-front .contact-info .number-text {
-    color: #111827;
+    color: #ffffff;
     font-size: 0.95rem;
     font-weight: 700;
 }
@@ -804,17 +816,17 @@ h5.mb-1.fw-semibold {
     display: none !important;
 }
 
-.flip-card-container:hover .flip-card-front.service-card {
+/* .flip-card-container:hover .flip-card-front.service-card {
     border: 2px solid #1f50dff5 !important;
-}
+} */
 
 .flip-card-container:hover .flip-card-front h4 {
-    color: #1f50dff5 !important;
+    color: #ffc107 !important;
     transition: color 0.3s ease;
 }
 
 .flip-card-container:hover .flip-card-front .icon-box i {
-    background: linear-gradient(135deg, #1f50dff5 0%, #fcc02a 100%);
+    background: linear-gradient(135deg, #ffc107 0%, #fcc02a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
