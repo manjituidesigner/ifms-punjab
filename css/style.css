@@ -217,6 +217,10 @@ h6 {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
+.btn-primary-gradient:hover .arrow-circle {
+    transform: translateX(3px);
+}
+
 i.bi.bi-arrow-right.fs-5 {
     color: #0048eb !important;
     font-weight: 600;
@@ -226,6 +230,7 @@ i.bi.bi-arrow-right.fs-5 {
     width: 40px;
     height: 40px;
     color: #4010a3 !important;
+    transition: transform 0.3s ease;
 }
 
 /* Carousel Controls */
