@@ -885,11 +885,11 @@ h5.mb-1.fw-semibold {
 }
 
 [data-bs-theme="dark"] .flip-card-front .icon-box i {
-    color: #64b5f6 !important;
+    color: #6c81ab !important;
 }
 
 [data-bs-theme="dark"] .flip-card-front .contact-info i {
-    background-color: #333 !important;
+    background-color: #17233b8f !important;
     color: #e0e0e0 !important;
 }
 
@@ -1051,6 +1051,11 @@ h5.mb-1.fw-semibold {
 
 [data-bs-theme="dark"] svg path[fill="#172b6b"] {
     fill: #070708 !important;
+}
+
+[data-bs-theme="dark"] .service-card {
+    background: linear-gradient(225deg, rgb(32 38 65) 0%, rgb(32 34 51) 35%, rgb(1 1 1) 100%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* ------------------------------------------- */
