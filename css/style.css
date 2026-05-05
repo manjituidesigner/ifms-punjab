@@ -38,7 +38,7 @@ body {
 }
 
 .back-to-top:hover {
-    background-color: #ffc107;
+    background-color: #e5ac00;
     /* Yellow background */
     color: #172b6b !important;
     /* Blue icon */
@@ -1119,5 +1119,9 @@ i.bi.bi-download.fs-5 {
 
     .col-lg-3.col-md-6.d-flex.align-items-center.justify-content-center.justify-content-lg-start {
         max-width: 33% !important;
+    }
+
+    .back-to-top {
+        bottom: 60px !important;
     }
 }
