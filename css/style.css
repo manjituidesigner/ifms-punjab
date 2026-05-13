@@ -323,6 +323,14 @@ i.bi.bi-arrow-right.fs-5 {
     }
 }
 
+@media (min-width: 1200px) {
+    .flip-card-inner {
+        max-width: 100%;
+    }
+}
+
+
+
 .flip-card-container {
     perspective: 1000px;
     height: 100%;
